@@ -1,1 +1,1 @@
-This Is a project for a simple desktop responsive login page 0.0.1
+This is a project for a simple desktop responsive login page 0.0.1
