@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 
 export const Input = () => {
  return(
-    <div> </div>
+    <div> 
+        <input type="text" />
+    </div>
  )
 }
