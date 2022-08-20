@@ -24,7 +24,7 @@ export default function Login() {
     <>
       <Container className="text-center mt-4 shadow-lg p-3 mb-5 bg-white rounded">
         <Row>
-          <Col sm="12" className="mb-3 mt-5">
+          <Col sm="12" className="mb-3 mt-2">
             <Image src={SideImg} alt="Side" responsive />
           </Col>
         </Row>
