@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import ReactDOM from "react-dom/client";
 import { Google, Facebook, Instagram } from "react-bootstrap-icons";
 
@@ -18,7 +18,24 @@ import {
 import SideImg from "./assets/Images/logo-transparent.png";
 
 export default function Login() {
-  console.log("yes");
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loggedin, setLoggedin] = useState(false);
+
+  function Formval(){
+    const defemail = "msquare@gmail.com";
+    const defpassword = "masqurepass";
+
+    if(email === defemail && password === defpassword){
+      setLoggedin(true);
+      alert("Login Successful");
+    }
+    else{
+      setLoggedin(false);
+      alert("Login Failed, The given Email and Password isnot correct. Please Try Again");
+    }
+  }
 
   return (
     <>
@@ -36,7 +53,7 @@ export default function Login() {
         </Row>
 
         <Row>
-          <Form>
+          <Form onSubmit={Formval}>
             <Col sm="4" className="m-auto mb-3">
               <InputGroup className="my-4">
                 <Form.Control
@@ -44,6 +61,7 @@ export default function Login() {
                   type="email"
                   placeholder="Enter your email"
                   required
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </InputGroup>
 
@@ -53,6 +71,7 @@ export default function Login() {
                   type="password"
                   placeholder="Enter your password"
                   required
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </InputGroup>
 
@@ -65,11 +84,11 @@ export default function Login() {
 
           <Col sm="4" className="m-auto mb-5">
             <span className="mx-5">
-              Don't have any account? 
-              <a 
-              href="yes"
-              className="text-decoration-none"
-              > Signup</a>
+              Don't have any account?
+              <a href="yes" className="text-decoration-none">
+                {" "}
+                Signup
+              </a>
             </span>
             <a href="yes" className="text-decoration-none ms-5">
               {" "}
