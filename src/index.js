@@ -23,13 +23,15 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [loggedin, setLoggedin] = useState(false);
 
-  function Formval(){
+  function Formval(e){
+    e.preventDefault();
     const defemail = "msquare@gmail.com";
-    const defpassword = "masqurepass";
+    const defpassword = "msquarepass";
 
     if(email === defemail && password === defpassword){
       setLoggedin(true);
       alert("Login Successful");
+      window.location.href = "/";
     }
     else{
       setLoggedin(false);
