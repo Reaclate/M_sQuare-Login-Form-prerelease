@@ -22,7 +22,7 @@ export default function Login() {
 
   return (
     <>
-      <Container className="text-center">
+      <Container className="text-center mt-4 shadow-lg p-3 mb-5 bg-white rounded">
         <Row>
           <Col sm="12" className="mb-3 mt-5">
             <Image src={SideImg} alt="Side" responsive />
@@ -64,14 +64,14 @@ export default function Login() {
           </Form>
 
           <Col sm="4" className="m-auto mb-5">
-            <span className="me-5">
+            <span className="mx-5">
               Don't have any account? 
               <a 
               href="yes"
               className="text-decoration-none"
               > Signup</a>
             </span>
-            <a href="yes" className="text-decoration-none">
+            <a href="yes" className="text-decoration-none ms-5">
               {" "}
               Forgot Password?{" "}
             </a>
