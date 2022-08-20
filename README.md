@@ -1,3 +1,2 @@
-# Simple Login Page Developed Using: HTML, CSS, Bootstrap, React.js, React-Bootstrap and React-icons.
-
-# Contributor: Tinsaye Simeneh
+- This Is a project for a simple desktop responsive login page 0
+- Contributor: Tinsaye Simeneh
