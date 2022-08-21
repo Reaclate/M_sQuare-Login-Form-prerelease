@@ -1,2 +1,1 @@
-- This Is a project for a simple desktop responsive login page 0
-- Contributor: Tinsaye Simeneh
+- This is a project created to a simple desktop responsive Login form for web app called MsQuare
