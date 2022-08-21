@@ -42,8 +42,9 @@ export default function Login() {
   return (
     <>
       <Container className="text-center mt-4 shadow-lg p-3 mb-5 bg-white rounded">
-        Default Email is "msquare@gmail.com" <br/>
-        Default Password is "msquarepass"
+        <div className="bg-danger text-white d-block rounded py-3">
+        Default Email = "msquare@gmail.com"  &  Default Password = "msquarepass"
+        </div>
         <Row>
           <Col sm="12" className="mb-3 mt-2">
             <Image src={SideImg} alt="Side" responsive />
